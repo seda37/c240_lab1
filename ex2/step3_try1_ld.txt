@@ -1,0 +1,3 @@
+riscv32-unknown-elf-ld: warning: cannot find entry symbol _start; defaulting to 000100b4
+riscv32-unknown-elf-ld: GCD.o: in function `main':
+GCD.c:(.text+0xb0): undefined reference to `printf'

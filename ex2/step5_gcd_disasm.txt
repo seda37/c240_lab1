@@ -1,0 +1,30 @@
+
+GCD_linked:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+000100f8 <gcd>:
+   100f8:	fd010113          	addi	sp,sp,-48
+   100fc:	02112623          	sw	ra,44(sp)
+   10100:	02812423          	sw	s0,40(sp)
+   10104:	03010413          	addi	s0,sp,48
+   10108:	fca42e23          	sw	a0,-36(s0)
+   1010c:	fcb42c23          	sw	a1,-40(s0)
+   10110:	0240006f          	j	10134 <gcd+0x3c>
+   10114:	fdc42703          	lw	a4,-36(s0)
+   10118:	fd842783          	lw	a5,-40(s0)
+   1011c:	02f767b3          	rem	a5,a4,a5
+   10120:	fef42623          	sw	a5,-20(s0)
+   10124:	fd842783          	lw	a5,-40(s0)
+   10128:	fcf42e23          	sw	a5,-36(s0)
+   1012c:	fec42783          	lw	a5,-20(s0)
+   10130:	fcf42c23          	sw	a5,-40(s0)
+   10134:	fd842783          	lw	a5,-40(s0)
+   10138:	fc079ee3          	bnez	a5,10114 <gcd+0x1c>
+   1013c:	fdc42783          	lw	a5,-36(s0)
+   10140:	00078513          	mv	a0,a5
+   10144:	02c12083          	lw	ra,44(sp)
+   10148:	02812403          	lw	s0,40(sp)
+   1014c:	03010113          	addi	sp,sp,48
+   10150:	00008067          	ret
