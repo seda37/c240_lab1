@@ -1,0 +1,1 @@
+GCD.o: ELF 32-bit LSB relocatable, UCB RISC-V, soft-float ABI, version 1 (SYSV), not stripped
